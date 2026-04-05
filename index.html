@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AL&amp;S Media — Amplify Your Reach</title>
+  <meta name="description" content="AL&S Media is a South African outdoor advertising company offering strategically located static billboards and digital screens across Gauteng, Eastern Cape, and KwaZulu-Natal.">
+  <meta property="og:title" content="AL&S Media — Amplify Your Reach">
+  <meta property="og:description" content="Cutting-edge outdoor advertising solutions across South Africa. Static billboards and digital screens in high-traffic locations.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#" class="header__logo" aria-label="AL&S Media home">
+        <svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="AL&S Media logo">
+          <text x="0" y="32" font-family="'Clash Display', sans-serif" font-weight="700" font-size="30" fill="currentColor">al&amp;s.</text>
+        </svg>
+      </a>
+      <nav class="header__nav" id="nav" aria-label="Main navigation">
+        <a href="#about" class="header__link">About</a>
+        <a href="#services" class="header__link">Services</a>
+        <a href="#work" class="header__link">Our Work</a>
+        <a href="#coverage" class="header__link">Coverage</a>
+        <a href="#contact" class="header__link header__link--cta">Get in Touch</a>
+      </nav>
+      <button class="header__menu" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav" id="mobile-nav">
+    <nav aria-label="Mobile navigation">
+      <a href="#about" class="mobile-nav__link">About</a>
+      <a href="#services" class="mobile-nav__link">Services</a>
+      <a href="#work" class="mobile-nav__link">Our Work</a>
+      <a href="#coverage" class="mobile-nav__link">Coverage</a>
+      <a href="#contact" class="mobile-nav__link">Get in Touch</a>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__bg">
+        <img src="./assets/hero.png" alt="Illuminated billboard on a busy South African highway at dusk" loading="eager">
+        <div class="hero__overlay"></div>
+      </div>
+      <div class="hero__content">
+        <p class="hero__tagline">Outdoor Advertising</p>
+        <h1 class="hero__title">Amplify<br>your reach.</h1>
+        <p class="hero__subtitle">Strategically located billboards and digital screens across South Africa's highest-traffic corridors.</p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary">Request a proposal</a>
+          <a href="#work" class="btn btn--ghost">View our sites</a>
+        </div>
+      </div>
+      <div class="hero__scroll">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </div>
+    </section>
+
+    <!-- Stats Strip -->
+    <section class="stats" aria-label="Key statistics">
+      <div class="stats__inner">
+        <div class="stats__item">
+          <span class="stats__number" data-target="4">0</span>
+          <span class="stats__label">Regions</span>
+        </div>
+        <div class="stats__item">
+          <span class="stats__number" data-target="15">0</span><span class="stats__suffix">+</span>
+          <span class="stats__label">Sites Nationwide</span>
+        </div>
+        <div class="stats__item">
+          <span class="stats__number" data-target="300">0</span><span class="stats__suffix">K+</span>
+          <span class="stats__label">Daily Vehicle Traffic</span>
+        </div>
+        <div class="stats__item">
+          <span class="stats__number" data-target="2022">2022</span>
+          <span class="stats__label">Founded</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="about__inner">
+        <div class="about__text">
+          <p class="section-label">About Us</p>
+          <h2 class="section-title">Built on partnership.<br>Driven by impact.</h2>
+          <p class="about__body">Founded in 2022 by Athenkosi Potwana and Ryan Kankowski, AL&amp;S Media delivers cutting-edge outdoor advertising solutions that captivate audiences and leave a lasting impression.</p>
+          <p class="about__body">Through our strong network of landlord partners, we offer a diverse range of strategically located sites across the country, ensuring maximum exposure for our clients' messages.</p>
+          <p class="about__body about__body--accent">What sets us apart is our unwavering commitment to respond to briefs timeously and to execute innovative opportunities with our clients.</p>
+        </div>
+        <div class="about__visual">
+          <img src="./assets/aerial.png" alt="Aerial view of a billboard overlooking a major highway interchange in South Africa" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+      <div class="services__inner">
+        <p class="section-label">Services</p>
+        <h2 class="section-title">Two formats.<br>Unlimited visibility.</h2>
+        <div class="services__grid">
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="4" y="8" width="40" height="24" rx="2"/>
+                <line x1="24" y1="32" x2="24" y2="42"/>
+                <line x1="16" y1="42" x2="32" y2="42"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Static Billboards</h3>
+            <p class="service-card__desc">Large-format PVC billboards in premium highway and roadside locations. Serviced directly by AL&amp;S Media with sizes ranging from 10m x 20m to 10m x 80m.</p>
+            <ul class="service-card__features" role="list">
+              <li>Premium highway positions</li>
+              <li>High-impact large format</li>
+              <li>Full production management</li>
+              <li>Multi-face structures available</li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="6" y="6" width="36" height="28" rx="3"/>
+                <circle cx="24" cy="20" r="6"/>
+                <path d="M14 38h20"/>
+                <path d="M18 34h12"/>
+                <circle cx="36" cy="10" r="3" fill="currentColor" opacity="0.4"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Digital Screens</h3>
+            <p class="service-card__desc">Dynamic digital out-of-home (DOOH) displays in high-footfall urban locations. Serviced through our digital partner Relativ Media for seamless campaign delivery.</p>
+            <ul class="service-card__features" role="list">
+              <li>Dynamic content rotation</li>
+              <li>Urban &amp; transit locations</li>
+              <li>Flexible campaign scheduling</li>
+              <li>Real-time content updates</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work / Visual Showcase -->
+    <section class="work" id="work">
+      <div class="work__inner">
+        <p class="section-label">Our Work</p>
+        <h2 class="section-title">Sites that demand attention.</h2>
+        <p class="work__subtitle">From high-traffic highways to busy urban intersections, our sites are positioned where audiences are.</p>
+      </div>
+      <div class="work__gallery">
+        <div class="work__item work__item--wide">
+          <img src="./assets/hero.png" alt="Billboard on busy highway at dusk with Johannesburg skyline" loading="lazy">
+          <div class="work__caption">
+            <span class="work__location">Gauteng</span>
+            <span class="work__detail">Highway &amp; Roadside</span>
+          </div>
+        </div>
+        <div class="work__item">
+          <img src="./assets/digital.png" alt="Vibrant digital billboard glowing at night in urban setting" loading="lazy">
+          <div class="work__caption">
+            <span class="work__location">Digital Network</span>
+            <span class="work__detail">DOOH &amp; Urban Screens</span>
+          </div>
+        </div>
+        <div class="work__item">
+          <img src="./assets/aerial.png" alt="Aerial view of billboard at highway interchange" loading="lazy">
+          <div class="work__caption">
+            <span class="work__location">National</span>
+            <span class="work__detail">Premium Placements</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coverage -->
+    <section class="coverage" id="coverage">
+      <div class="coverage__inner">
+        <p class="section-label">Coverage</p>
+        <h2 class="section-title">Four regions.<br>One network.</h2>
+        <div class="coverage__grid">
+          <div class="coverage__region">
+            <span class="coverage__number">01</span>
+            <h3 class="coverage__name">Gauteng</h3>
+            <p class="coverage__sites">Grayston, Woodmead, R21, Melrose, Fairlands</p>
+            <p class="coverage__type">Static &amp; Digital</p>
+          </div>
+          <div class="coverage__region">
+            <span class="coverage__number">02</span>
+            <h3 class="coverage__name">Gqeberha</h3>
+            <p class="coverage__sites">Settlers Way, Deal Party</p>
+            <p class="coverage__type">Digital &amp; Static</p>
+          </div>
+          <div class="coverage__region">
+            <span class="coverage__number">03</span>
+            <h3 class="coverage__name">East London</h3>
+            <p class="coverage__sites">Military Road, Fitchett Road, Vincent</p>
+            <p class="coverage__type">Static &amp; Digital</p>
+          </div>
+          <div class="coverage__region">
+            <span class="coverage__number">04</span>
+            <h3 class="coverage__name">Durban</h3>
+            <p class="coverage__sites">M4 Highway, M12 My Ave, Anton Lembede Street</p>
+            <p class="coverage__type">Digital &amp; Static</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="contact__inner">
+        <div class="contact__text">
+          <p class="section-label">Get in Touch</p>
+          <h2 class="section-title">Ready to amplify<br>your reach?</h2>
+          <p class="contact__body">Whether you're planning a national campaign or targeting a specific region, we'll find the right sites for your message.</p>
+          <div class="contact__info">
+            <div class="contact__person">
+              <span class="contact__name">Ryan Kankowski</span>
+              <span class="contact__role">Director</span>
+            </div>
+            <a href="mailto:ryan@alands.media" class="contact__email">ryan@alands.media</a>
+            <a href="tel:+27848909270" class="contact__phone">+27 84 890 9270</a>
+          </div>
+        </div>
+        <form class="contact__form" id="contact-form" action="mailto:ryan@alands.media" method="POST" enctype="text/plain">
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" autocomplete="organization">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="message">Tell us about your campaign</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send enquiry</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <svg width="100" height="34" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="AL&S Media">
+          <text x="0" y="32" font-family="'Clash Display', sans-serif" font-weight="700" font-size="30" fill="currentColor">al&amp;s.</text>
+        </svg>
+        <p class="footer__tagline">amplify your reach</p>
+      </div>
+      <div class="footer__links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#work">Our Work</a>
+        <a href="#coverage">Coverage</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer__legal">
+        <p>&copy; 2025 AL&amp;S Media. All rights reserved.</p>
+        <p>All contents are the intellectual property of AL&amp;S Media.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
