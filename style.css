@@ -664,6 +664,13 @@
   margin-inline: auto;
 }
 
+.coverage__intro {
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  max-width: 580px;
+  line-height: 1.7;
+}
+
 .coverage__grid {
   display: grid;
   gap: var(--space-4);
