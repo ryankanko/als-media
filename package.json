@@ -1,0 +1,14 @@
+{
+  "name": "als-media",
+  "version": "1.0.0",
+  "description": "AL&S Media website",
+  "scripts": {
+    "start": "serve -s . -l $PORT"
+  },
+  "dependencies": {
+    "serve": "^14.2.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
