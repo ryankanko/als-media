@@ -72,7 +72,7 @@
   const io = new IntersectionObserver((entries) => entries.forEach((en) => {
     if (en.isIntersecting) { en.target.classList.add('is-in'); io.unobserve(en.target); }
   }), { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
-  document.querySelectorAll('.reveal, .format, .about > *, .contact__grid > *, .chapter__text').forEach((el) => { el.classList.add('reveal'); io.observe(el); });
+  document.querySelectorAll('.reveal, .format, .sky__card, .about > *, .contact__grid > *, .chapter__text').forEach((el) => { el.classList.add('reveal'); io.observe(el); });
 
   // Form → email
   const form = $('#contact-form');
@@ -95,6 +95,16 @@
     window.location.href = 'mailto:ryan@alands.media?subject=' + subject + '&body=' + encodeURIComponent(lines.join('\n'));
     msg.textContent = 'Your email app should open with the enquiry ready to send. If not, email ryan@alands.media.';
   });
+
+  const skyBtn = $('#sky-enquire');
+  if (skyBtn) skyBtn.addEventListener('click', () => { const m = $('#message'); if (!m.value.trim()) m.value = 'Sky activation enquiry: '; });
+
+  document.querySelectorAll('[data-bible]').forEach((el) => el.addEventListener('click', () => {
+    $('#bible').checked = true;
+    const m = $('#message');
+    if (!m.value.trim()) m.value = 'Please send me the latest AL&S Media Site Bible.';
+    setTimeout(() => $('#name').focus({ preventScroll: true }), 600);
+  }));
 
   $('#year').textContent = new Date().getFullYear();
 })();

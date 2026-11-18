@@ -25,6 +25,7 @@
       <nav class="nav" id="nav" aria-label="Main navigation">
         <a href="#portfolio">Portfolio</a>
         <a href="#formats">Formats</a>
+        <a href="#sky">Sky</a>
         <a href="#about">About</a>
         <a href="#contact" class="btn btn--sm">Book a site</a>
       </nav>
@@ -45,7 +46,6 @@
         <p class="hero__lead">Outdoor advertising on South Africa's busiest routes. Iconic billboards, building wraps and skyline sites.</p>
         <div class="hero__actions">
           <a href="#portfolio" class="btn">View the portfolio</a>
-          <a href="#contact" class="btn btn--ghost">Request the Site Bible</a>
         </div>
       </div>
     </section>
@@ -119,6 +119,40 @@
       </div>
     </section>
 
+    <section class="section sky" id="sky" aria-labelledby="sky-title">
+      <div class="wrap">
+        <div class="section__head">
+          <div>
+            <p class="eyebrow">/ 04 · Beyond the billboard</p>
+            <h2 id="sky-title">Take it to the sky.</h2>
+          </div>
+          <p class="sky__lead">Launch-day spectacle to pair with your billboard campaign. Run with licensed aviation operators.</p>
+        </div>
+        <div class="sky__grid">
+          <article class="sky__card">
+            <div class="sky__media"><img src="./assets/sky-helicopter-md.webp" srcset="./assets/sky-helicopter-md.webp 900w, ./assets/sky-helicopter.webp 1600w" sizes="(max-width: 820px) 100vw, 50vw" alt="Helicopter towing a large banner over a Johannesburg highway at golden hour" loading="lazy" width="900" height="502"></div>
+            <div class="sky__body"><span class="mono">01</span><h3>Helicopter banners</h3><p>Giant banners flown low over highways, stadiums and beaches. The biggest single ad in the sky.</p></div>
+          </article>
+          <article class="sky__card">
+            <div class="sky__media"><img src="./assets/sky-balloon-md.webp" srcset="./assets/sky-balloon-md.webp 900w, ./assets/sky-balloon.webp 1600w" sizes="(max-width: 820px) 100vw, 50vw" alt="Tethered helium balloon with a branded band above a Sandton park at dusk" loading="lazy" width="900" height="502"></div>
+            <div class="sky__body"><span class="mono">02</span><h3>Tethered helium balloons</h3><p>A branded passenger balloon held above a park or venue. A landmark for weeks, not minutes.</p></div>
+          </article>
+          <article class="sky__card">
+            <div class="sky__media"><img src="./assets/sky-hotair-md.webp" srcset="./assets/sky-hotair-md.webp 900w, ./assets/sky-hotair.webp 1600w" sizes="(max-width: 820px) 100vw, 50vw" alt="Branded hot air balloon at sunrise over the Magaliesberg valley" loading="lazy" width="900" height="502"></div>
+            <div class="sky__body"><span class="mono">03</span><h3>Hot air balloons</h3><p>Branded envelopes and sunrise flights for content, launches and VIP client experiences.</p></div>
+          </article>
+          <article class="sky__card">
+            <div class="sky__media"><img src="./assets/sky-drones-md.webp" srcset="./assets/sky-drones-md.webp 900w, ./assets/sky-drones.webp 1600w" sizes="(max-width: 820px) 100vw, 50vw" alt="Drone light show spelling al&s above the Johannesburg skyline at night" loading="lazy" width="900" height="502"></div>
+            <div class="sky__body"><span class="mono">04</span><h3>Drone light shows</h3><p>Hundreds of drones drawing your logo over the city at night. Built for launches and events.</p></div>
+          </article>
+        </div>
+        <div class="sky__cta">
+          <p>Available on request. Book well ahead: flight dates depend on weather and permits, and are confirmed with the operator.</p>
+          <a href="#contact" class="btn" id="sky-enquire">Plan a sky activation</a>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="portfolio">
       <div class="wrap">
         <div class="section__head">
@@ -133,7 +167,7 @@
           </div>
         </div>
         <div class="list" id="site-grid" role="list"></div>
-        <p class="note">Site photos, rates and availability are in the Site Bible. <a href="#contact">Request the latest edition.</a></p>
+        <p class="note">Site photos, rates and availability are in the Site Bible. <a href="#contact" data-bible>Get the latest edition.</a></p>
       </div>
     </section>
 
@@ -198,7 +232,7 @@
   <footer class="footer">
     <div class="wrap footer__inner">
       <a href="#top" class="logo">al<span>&amp;</span>s <em>media</em></a>
-      <nav aria-label="Footer"><a href="#portfolio">Portfolio</a><a href="#formats">Formats</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+      <nav aria-label="Footer"><a href="#portfolio">Portfolio</a><a href="#formats">Formats</a><a href="#sky">Sky</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
       <p>© <span id="year"></span> AL&amp;S Media (Pty) Ltd · Johannesburg, South Africa<br><small>Story imagery is illustrative. Actual site photos are in the Site Bible.</small></p>
     </div>
   </footer>
