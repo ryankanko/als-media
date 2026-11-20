@@ -1,259 +1,201 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-ZA">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AL&amp;S Media — Amplify your reach</title>
-  <meta name="description" content="AL&S Media: iconic billboards, building wraps and skyline sites on South Africa's busiest routes in Johannesburg and East London.">
-  <meta property="og:title" content="AL&S Media — Amplify your reach">
-  <meta property="og:description" content="18 high-impact outdoor sites across Johannesburg and East London.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="./assets/hero-skyline.webp">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231c0b1b'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Arial' font-weight='700' font-size='20' fill='%23df813b'%3E%26%3C/text%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://api.fontshare.com">
-  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600&f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AL&amp;S Media — Amplify your reach</title>
+<meta name="description" content="Outdoor advertising on South Africa's busiest routes. Iconic billboards, building wraps and skyline sites in Johannesburg and East London.">
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/hero-skyline.webp">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
+<a class="skip" href="#main">Skip to content</a>
+<div class="cursor" aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__ring"></span></div>
 
-  <header class="header" id="header">
-    <div class="wrap header__inner">
-      <a href="#top" class="logo" aria-label="AL&amp;S Media home">al<span>&amp;</span>s <em>media</em></a>
-      <nav class="nav" id="nav" aria-label="Main navigation">
-        <a href="#portfolio">Portfolio</a>
-        <a href="#formats">Formats</a>
-        <a href="#sky">Sky</a>
-        <a href="#about">About</a>
-        <a href="#contact" class="btn btn--sm">Book a site</a>
-      </nav>
-      <button class="menu" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+<header class="nav" id="top">
+  <a class="nav__logo" href="#top" aria-label="AL&amp;S Media home">al<span>&amp;</span>s media</a>
+  <nav class="nav__links" aria-label="Main">
+    <a href="#switch">Story</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#sky">Sky</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="nav__cta magnetic" href="#contact">Book a site</a>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <canvas class="hero__sky" id="sky-shader" aria-hidden="true"></canvas>
+    <div class="hero__city" aria-hidden="true"><img src="assets/hero-skyline.webp" alt="" width="2752" height="1536"></div>
+    <div class="hero__grain" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <p class="eyebrow"><span class="pulse"></span>18 sites · Johannesburg · East London</p>
+      <h1 class="hero__title" id="hero-title"><span class="line"><span class="split">Amplify</span></span><span class="line"><span class="split">your reach.</span></span></h1>
+      <p class="hero__lede">Outdoor advertising on South Africa's busiest routes. Iconic billboards, building wraps and skyline sites.</p>
+      <div class="hero__actions">
+        <a class="btn btn--solid magnetic" href="#portfolio">View the portfolio</a>
+        <a class="btn btn--ghost" href="#contact">Get the Site Bible</a>
+      </div>
     </div>
-  </header>
+    <p class="hero__scroll" aria-hidden="true"><span></span>Scroll</p>
+  </section>
 
-  <main id="main">
-    <section class="hero" id="top">
-      <picture>
-        <source media="(max-width: 820px)" srcset="./assets/hero-skyline-md.webp">
-        <img class="hero__img" src="./assets/hero-skyline.webp" alt="Illuminated skyline billboard on a Johannesburg tower at dusk" fetchpriority="high" width="2400" height="1339">
-      </picture>
-      <div class="hero__shade"></div>
-      <div class="wrap hero__inner">
-        <p class="eyebrow">/ 18 sites · Johannesburg · East London</p>
-        <h1 class="hero__title">Amplify<br>your reach.</h1>
-        <p class="hero__lead">Outdoor advertising on South Africa's busiest routes. Iconic billboards, building wraps and skyline sites.</p>
-        <div class="hero__actions">
-          <a href="#portfolio" class="btn">View the portfolio</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="strip" aria-label="Key figures">
-      <div class="wrap strip__grid">
-        <div><strong>18</strong><span>Sites in this edition</span></div>
-        <div><strong>8.1M</strong><span>Monthly traffic at Newtown – M1 South</span></div>
-        <div><strong>40m</strong><span>Skyline panels at Kine Tower</span></div>
-        <div><strong>LSM 1–10</strong><span>Audiences covered across the network</span></div>
-      </div>
-    </section>
-
-    <section class="chapter" id="story" aria-labelledby="ch1">
-      <div class="chapter__media">
-        <picture>
-          <source media="(max-width: 820px)" srcset="./assets/story-highway-md.webp">
-          <img style="--pos:80%" src="./assets/story-highway.webp" alt="Large illuminated billboard beside a Johannesburg highway at blue hour" loading="lazy" width="2400" height="1339">
-        </picture>
-      </div>
-      <div class="wrap chapter__text">
+  <!-- ASCII SWITCH-ON -->
+  <section class="switch" id="switch" aria-labelledby="switch-title">
+    <div class="switch__stage">
+      <canvas id="ascii" aria-hidden="true"></canvas>
+      <img class="switch__photo" src="assets/story-highway.webp" alt="A lit billboard above a Johannesburg highway at dusk" width="2752" height="1536" loading="lazy">
+      <div class="switch__copy">
         <p class="eyebrow">/ 01 · The highways</p>
-        <h2 id="ch1">Seen by millions.</h2>
+        <h2 id="switch-title">Seen by<br>millions.</h2>
         <p>Our highway sites sit on the M1 and M2, the routes Johannesburg drives every day. Newtown – M1 South alone sees 8.1 million vehicles a month across four printable faces.</p>
-        <ul class="chapter__sites">
-          <li><button type="button" data-open="1">Newtown – M1 South</button></li>
-          <li><button type="button" data-open="9">M1 Highway Sandton</button></li>
-          <li><button type="button" data-open="12">Wendywood Towers</button></li>
-          <li><button type="button" data-open="14">Grayston</button></li>
-          <li><button type="button" data-open="16">Rivonia Road</button></li>
-        </ul>
       </div>
-    </section>
-
-    <section class="chapter" aria-labelledby="ch2">
-      <div class="chapter__media">
-        <picture>
-          <source media="(max-width: 820px)" srcset="./assets/story-wrap-md.webp">
-          <img style="--pos:62%" src="./assets/story-wrap.webp" alt="Full-height building wrap on a busy inner-city corner at golden hour" loading="lazy" width="2400" height="1339">
-        </picture>
-      </div>
-      <div class="wrap chapter__text">
-        <p class="eyebrow">/ 02 · The city</p>
-        <h2 id="ch2">Own the corner.</h2>
-        <p>Building wraps and skyline sites in the Joburg CBD, next to the Carlton Centre, the fashion district and the Bree Taxi Rank. Kine Tower's 40m panels are visible from the M2 and lit all night.</p>
-        <ul class="chapter__sites">
-          <li><button type="button" data-open="6">Kine Tower Skyline</button></li>
-          <li><button type="button" data-open="5">141 Commissioner Str</button></li>
-          <li><button type="button" data-open="3">Nedbank Plaza 1 &amp; 2</button></li>
-          <li><button type="button" data-open="2">195 Smit Street</button></li>
-          <li><button type="button" data-open="10">Fattis Mansions</button></li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="chapter" aria-labelledby="ch3">
-      <div class="chapter__media">
-        <picture>
-          <source media="(max-width: 820px)" srcset="./assets/story-eastlondon-md.webp">
-          <img style="--pos:30%" src="./assets/story-eastlondon.webp" alt="Raised roadside billboard on a coastal road into East London" loading="lazy" width="2400" height="1339">
-        </picture>
-      </div>
-      <div class="wrap chapter__text">
-        <p class="eyebrow">/ 03 · Beyond Johannesburg</p>
-        <h2 id="ch3">Reach the coast.</h2>
-        <p>Two raised A- and B-side sites in East London: Military Road on the main route from the airport into the CBD, and Fitchett Road on the North West Expressway.</p>
-        <ul class="chapter__sites">
-          <li><button type="button" data-open="17">Military Road</button></li>
-          <li><button type="button" data-open="18">Fitchett Road</button></li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section sky" id="sky" aria-labelledby="sky-title">
-      <div class="wrap">
-        <div class="section__head">
-          <div>
-            <p class="eyebrow">/ 04 · Beyond the billboard</p>
-            <h2 id="sky-title">Take it to the sky.</h2>
-          </div>
-          <p class="sky__lead">Launch-day spectacle to pair with your billboard campaign. Run with licensed aviation operators.</p>
-        </div>
-        <div class="sky__grid">
-          <article class="sky__card">
-            <div class="sky__media"><img src="./assets/sky-helicopter-md.webp" srcset="./assets/sky-helicopter-md.webp 900w, ./assets/sky-helicopter.webp 1600w" sizes="(max-width: 820px) 100vw, 50vw" alt="Helicopter towing a large banner over a Johannesburg highway at golden hour" loading="lazy" width="900" height="502"></div>
-            <div class="sky__body"><span class="mono">01</span><h3>Helicopter banners</h3><p>Giant banners flown low over highways, stadiums and beaches. The biggest single ad in the sky.</p></div>
-          </article>
-          <article class="sky__card">
-            <div class="sky__media"><img src="./assets/sky-balloon-md.webp" srcset="./assets/sky-balloon-md.webp 900w, ./assets/sky-balloon.webp 1600w" sizes="(max-width: 820px) 100vw, 50vw" alt="Tethered helium balloon with a branded band above a Sandton park at dusk" loading="lazy" width="900" height="502"></div>
-            <div class="sky__body"><span class="mono">02</span><h3>Tethered helium balloons</h3><p>A branded passenger balloon held above a park or venue. A landmark for weeks, not minutes.</p></div>
-          </article>
-          <article class="sky__card">
-            <div class="sky__media"><img src="./assets/sky-hotair-md.webp" srcset="./assets/sky-hotair-md.webp 900w, ./assets/sky-hotair.webp 1600w" sizes="(max-width: 820px) 100vw, 50vw" alt="Branded hot air balloon at sunrise over the Magaliesberg valley" loading="lazy" width="900" height="502"></div>
-            <div class="sky__body"><span class="mono">03</span><h3>Hot air balloons</h3><p>Branded envelopes and sunrise flights for content, launches and VIP client experiences.</p></div>
-          </article>
-          <article class="sky__card">
-            <div class="sky__media"><img src="./assets/sky-drones-md.webp" srcset="./assets/sky-drones-md.webp 900w, ./assets/sky-drones.webp 1600w" sizes="(max-width: 820px) 100vw, 50vw" alt="Drone light show spelling al&s above the Johannesburg skyline at night" loading="lazy" width="900" height="502"></div>
-            <div class="sky__body"><span class="mono">04</span><h3>Drone light shows</h3><p>Hundreds of drones drawing your logo over the city at night. Built for launches and events.</p></div>
-          </article>
-        </div>
-        <div class="sky__cta">
-          <p>Available on request. Book well ahead: flight dates depend on weather and permits, and are confirmed with the operator.</p>
-          <a href="#contact" class="btn" id="sky-enquire">Plan a sky activation</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="portfolio">
-      <div class="wrap">
-        <div class="section__head">
-          <div>
-            <p class="eyebrow">/ The portfolio</p>
-            <h2>All 18 sites.</h2>
-          </div>
-          <div class="filters" role="group" aria-label="Filter sites by city">
-            <button class="chip is-active" data-filter="all" aria-pressed="true">All <span>18</span></button>
-            <button class="chip" data-filter="jhb" aria-pressed="false">Johannesburg <span>16</span></button>
-            <button class="chip" data-filter="el" aria-pressed="false">East London <span>2</span></button>
-          </div>
-        </div>
-        <div class="list" id="site-grid" role="list"></div>
-        <p class="note">Site photos, rates and availability are in the Site Bible. <a href="#contact" data-bible>Get the latest edition.</a></p>
-      </div>
-    </section>
-
-    <section class="section section--panel" id="formats">
-      <div class="wrap">
-        <p class="eyebrow">/ Formats</p>
-        <h2>Big formats. Bigger presence.</h2>
-        <div class="formats">
-          <article class="format"><span class="mono">01</span><h3>Skyline sites</h3><p>Tower-top and full-height panels visible across the city and from the highway. Lit at night, impossible to miss.</p></article>
-          <article class="format"><span class="mono">02</span><h3>Building wraps</h3><p>Large-format wraps in Johannesburg's busiest pedestrian and fashion districts, with wrap-around faces on multiple streets.</p></article>
-          <article class="format"><span class="mono">03</span><h3>Iconic billboards</h3><p>Multi-face highway sites on the M1, M2 and key commuter routes, from Newtown to Sandton and East London.</p></article>
-          <article class="format"><span class="mono">04</span><h3>Production &amp; flighting</h3><p>Printing, flighting and installation handled for you, so your creative goes up on time and stays sharp.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="wrap about">
-        <div>
-          <p class="eyebrow">/ About AL&amp;S Media</p>
-          <h2>Built on partnership. Driven by impact.</h2>
-        </div>
-        <div>
-          <p>AL&amp;S Media is a Johannesburg-based outdoor advertising company. We secure high-visibility sites on the routes South Africans travel every day, then work directly with brands and agencies to get campaigns live.</p>
-          <p>You deal with the people who manage the sites: clear specifications, honest availability and a single point of contact from booking to flighting.</p>
-          <ul class="ticks">
-            <li>Council approval and ARA compliance noted per site</li>
-            <li>Traffic, LSM and nearby landmarks for every location</li>
-            <li>Printing and flighting arranged on request</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section contact" id="contact">
-      <div class="wrap contact__grid">
-        <div>
-          <p class="eyebrow">/ Book a site</p>
-          <h2>Let's amplify<br>your reach.</h2>
-          <p class="contact__lead">Tell us your brand, dates and target areas. We'll come back with availability, rates and the latest Site Bible.</p>
-          <div class="card person">
-            <strong>Ryan Kankowski</strong>
-            <span class="mono">Director</span>
-            <a href="mailto:ryan@alands.media">ryan@alands.media</a>
-            <a href="tel:+27848909270">+27 84 890 9270</a>
-          </div>
-        </div>
-        <form class="card form" id="contact-form" novalidate>
-          <div class="field"><label for="name">Name</label><input id="name" name="name" autocomplete="name" required></div>
-          <div class="field"><label for="company">Company or agency</label><input id="company" name="company" autocomplete="organization"></div>
-          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
-          <div class="field"><label for="site">Site of interest</label><select id="site" name="site"><option value="">Any / not sure yet</option></select></div>
-          <div class="field"><label for="message">Campaign details</label><textarea id="message" name="message" rows="4" placeholder="Brand, dates, budget range, target areas"></textarea></div>
-          <label class="check"><input type="checkbox" id="bible" checked> Send me the latest Site Bible</label>
-          <button class="btn btn--full" type="submit">Send enquiry</button>
-          <p class="form__msg" id="form-msg" role="status"></p>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="wrap footer__inner">
-      <a href="#top" class="logo">al<span>&amp;</span>s <em>media</em></a>
-      <nav aria-label="Footer"><a href="#portfolio">Portfolio</a><a href="#formats">Formats</a><a href="#sky">Sky</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
-      <p>© <span id="year"></span> AL&amp;S Media (Pty) Ltd · Johannesburg, South Africa<br><small>Story imagery is illustrative. Actual site photos are in the Site Bible.</small></p>
+      <div class="switch__meter" aria-hidden="true"><span id="switch-bar"></span></div>
     </div>
-  </footer>
+  </section>
 
-  <dialog class="modal" id="site-modal" aria-labelledby="m-title">
-    <button class="modal__close" id="m-close" aria-label="Close">×</button>
-    <div class="modal__body">
-      <p class="eyebrow" id="m-loc"></p>
-      <h3 id="m-title"></h3>
-      <p id="m-desc"></p>
-      <ul class="pills" id="m-stats"></ul>
-      <dl class="specs" id="m-specs"></dl>
-      <p class="nearby"><span class="mono">Nearby</span> <span id="m-near"></span></p>
-      <div class="modal__actions">
-        <a class="btn" id="m-enquire" href="#contact">Enquire about this site</a>
-        <a class="btn btn--ghost" id="m-map" target="_blank" rel="noopener">Open in Google Maps</a>
+  <!-- STATS -->
+  <section class="stats" aria-label="Network at a glance">
+    <div class="stat"><span class="stat__num" data-count="18">18</span><span class="stat__label">Sites in this edition</span></div>
+    <div class="stat"><span class="stat__num" data-count="8.1" data-dec="1" data-suffix="M">8.1M</span><span class="stat__label">Monthly traffic at Newtown – M1 South</span></div>
+    <div class="stat"><span class="stat__num" data-count="40" data-suffix="m">40m</span><span class="stat__label">Skyline panels at Kine Tower</span></div>
+    <div class="stat"><span class="stat__num stat__num--text">LSM 1–10</span><span class="stat__label">Audiences covered across the network</span></div>
+  </section>
+
+  <!-- HORIZONTAL CHAPTERS -->
+  <section class="chapters" id="story" aria-label="Where we are">
+    <div class="chapters__pin">
+      <div class="chapters__track" id="track">
+        <article class="chapter">
+          <div class="chapter__media"><img src="assets/story-wrap.webp" alt="A full building wrap in the Johannesburg CBD at night" width="2752" height="1536" loading="lazy"></div>
+          <div class="chapter__copy">
+            <p class="eyebrow">/ 02 · The city</p>
+            <h2>Own the corner.</h2>
+            <p>Building wraps and skyline sites in the Joburg CBD, next to the Carlton Centre, the fashion district and the Bree Taxi Rank. Kine Tower's 40m panels are visible from the M2 and lit all night.</p>
+            <ul class="chips"><li>Kine Tower Skyline</li><li>141 Commissioner Str</li><li>Nedbank Plaza 1 &amp; 2</li><li>195 Smit Street</li><li>Fattis Mansions</li></ul>
+          </div>
+        </article>
+        <article class="chapter">
+          <div class="chapter__media"><img src="assets/story-eastlondon.webp" alt="A raised billboard on an East London road at dusk" width="2752" height="1536" loading="lazy"></div>
+          <div class="chapter__copy">
+            <p class="eyebrow">/ 03 · Beyond Johannesburg</p>
+            <h2>Reach the coast.</h2>
+            <p>Two raised A- and B-side sites in East London: Military Road on the main route from the airport into the CBD, and Fitchett Road on the North West Expressway.</p>
+            <ul class="chips"><li>Military Road</li><li>Fitchett Road</li></ul>
+          </div>
+        </article>
+        <article class="chapter chapter--formats">
+          <div class="chapter__copy chapter__copy--wide">
+            <p class="eyebrow">/ Formats</p>
+            <h2>Big formats.<br>Bigger presence.</h2>
+            <ol class="formats">
+              <li><span>01</span><strong>Skyline sites</strong>Tower-top and full-height panels visible across the city and from the highway.</li>
+              <li><span>02</span><strong>Building wraps</strong>Large-format wraps in Johannesburg's busiest pedestrian and fashion districts.</li>
+              <li><span>03</span><strong>Iconic billboards</strong>Multi-face highway sites on the M1, M2 and key commuter routes.</li>
+              <li><span>04</span><strong>Production &amp; flighting</strong>Printing, flighting and installation handled for you.</li>
+            </ol>
+          </div>
+        </article>
       </div>
     </div>
-  </dialog>
+  </section>
 
-  <script src="./sites.js"></script>
-  <script src="./app.js"></script>
+  <!-- PORTFOLIO CAROUSEL -->
+  <section class="portfolio" id="portfolio" aria-labelledby="pf-title">
+    <div class="portfolio__head">
+      <div>
+        <p class="eyebrow">/ The portfolio</p>
+        <h2 id="pf-title">All 18 sites.</h2>
+      </div>
+      <div class="portfolio__tools">
+        <div class="filters" role="group" aria-label="Filter sites by city">
+          <button class="filter is-on" data-f="all" aria-pressed="true">All <span>18</span></button>
+          <button class="filter" data-f="jhb" aria-pressed="false">Johannesburg <span>16</span></button>
+          <button class="filter" data-f="el" aria-pressed="false">East London <span>2</span></button>
+        </div>
+        <div class="arrows">
+          <button class="arrow" id="prev" aria-label="Previous sites">←</button>
+          <button class="arrow" id="next" aria-label="Next sites">→</button>
+        </div>
+      </div>
+    </div>
+    <div class="glass-rail" id="rail" tabindex="0" aria-label="Site cards. Drag or use the arrows to browse."></div>
+    <p class="portfolio__note">Site photos, rates and availability are in the Site Bible. <a href="#contact" data-bible>Get the latest edition.</a></p>
+  </section>
+
+  <!-- SKY -->
+  <section class="sky" id="sky" aria-labelledby="sky-title">
+    <div class="sky__pin">
+      <div class="sky__copy">
+        <p class="eyebrow">/ 04 · Beyond the billboard</p>
+        <h2 id="sky-title">Take it<br>to the sky.</h2>
+        <p>Launch-day spectacle to pair with your billboard campaign. Run with licensed aviation operators.</p>
+        <ol class="sky__list" id="sky-list">
+          <li class="is-on"><span>01</span>Helicopter banners</li>
+          <li><span>02</span>Tethered helium balloons</li>
+          <li><span>03</span>Hot air balloons</li>
+          <li><span>04</span>Drone light shows</li>
+        </ol>
+        <a class="btn btn--solid magnetic" href="#contact" data-sky>Plan a sky activation</a>
+      </div>
+      <div class="sky__stack" aria-hidden="true">
+        <figure class="sky__card is-on"><img src="assets/sky-helicopter-md.webp" alt="" width="1376" height="768" loading="lazy"><figcaption>Giant banners flown low over highways, stadiums and beaches.</figcaption></figure>
+        <figure class="sky__card"><img src="assets/sky-balloon-md.webp" alt="" width="1376" height="768" loading="lazy"><figcaption>A branded balloon held above a park or venue. A landmark for weeks, not minutes.</figcaption></figure>
+        <figure class="sky__card"><img src="assets/sky-hotair-md.webp" alt="" width="1376" height="768" loading="lazy"><figcaption>Branded envelopes and sunrise flights for content, launches and VIP client experiences.</figcaption></figure>
+        <figure class="sky__card"><img src="assets/sky-drones-md.webp" alt="" width="1376" height="768" loading="lazy"><figcaption>Hundreds of drones drawing your logo over the city at night.</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <canvas class="contact__glow" id="contact-shader" aria-hidden="true"></canvas>
+    <div class="contact__inner">
+      <p class="eyebrow">/ Book a site</p>
+      <h2 id="contact-title">Let's amplify<br>your reach.</h2>
+      <p class="contact__lede">Tell us your brand, dates and target areas. We'll come back with availability, rates and the latest Site Bible.</p>
+      <form class="form" id="form">
+        <label><span>Name</span><input name="name" autocomplete="name" required></label>
+        <label><span>Company or agency</span><input name="company" autocomplete="organization"></label>
+        <label><span>Email</span><input name="email" type="email" autocomplete="email" required></label>
+        <label><span>Site of interest</span><select name="site" id="site-select"><option value="">Any / not sure yet</option></select></label>
+        <label class="form__wide"><span>Campaign details</span><textarea name="msg" rows="3" id="msg"></textarea></label>
+        <label class="check"><input type="checkbox" name="bible" id="bible"> Send me the latest Site Bible</label>
+        <button class="btn btn--solid magnetic" type="submit">Send enquiry</button>
+      </form>
+      <div class="contact__card">
+        <strong>Ryan Kankowski</strong><span>Director</span>
+        <a href="mailto:ryan@alands.media">ryan@alands.media</a>
+        <a href="tel:+27848909270">+27 84 890 9270</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <span class="nav__logo">al<span>&amp;</span>s media</span>
+  <span>© AL&amp;S Media (Pty) Ltd · Johannesburg, South Africa</span>
+  <span>Story imagery is illustrative. Actual site photos are in the Site Bible.</span>
+</footer>
+
+<dialog class="sheet" id="sheet" aria-labelledby="sheet-title">
+  <button class="sheet__x" id="sheet-x" aria-label="Close">×</button>
+  <p class="eyebrow" id="sheet-meta"></p>
+  <h3 id="sheet-title"></h3>
+  <p id="sheet-desc"></p>
+  <ul class="sheet__stats" id="sheet-stats"></ul>
+  <dl class="sheet__specs" id="sheet-specs"></dl>
+  <p class="sheet__near"><strong>Nearby</strong> <span id="sheet-near"></span></p>
+  <div class="sheet__actions">
+    <a class="btn btn--solid" href="#contact" id="sheet-enquire">Enquire about this site</a>
+    <a class="btn btn--ghost" id="sheet-map" target="_blank" rel="noopener">Open in Google Maps</a>
+  </div>
+</dialog>
+
+<script src="sites.js"></script>
+<script src="app.js" defer></script>
 </body>
 </html>
