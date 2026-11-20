@@ -149,7 +149,7 @@ void main(){
 
   /* ---------- ASCII switch-on ---------- */
   const asc = $('#ascii'), photo = $('.switch__photo'), bar = $('#switch-bar'), sw = $('.switch');
-  const actx = asc.getContext('2d');
+  const actx = asc.getContext('2d'); const copyEl = $('.switch__copy');
   const RAMP = ' .,:;-=+*#%@';
   const src = new Image(); src.src = 'assets/story-highway-md.webp';
   const off = document.createElement('canvas'); const octx = off.getContext('2d', { willReadFrequently: true });
@@ -175,13 +175,18 @@ void main(){
     actx.font = `600 ${cell}px "Satoshi", monospace`; actx.textBaseline = 'top';
     const lit = clamp((p - .15) / .45, 0, 1); // billboard "switches on"
     const flick = reduce ? 0 : (Math.sin(performance.now() / 70) > .7 ? .08 : 0);
+    // keep the copy readable: dim glyphs behind the text block
+    const cr0 = asc.getBoundingClientRect(), cb = copyEl.getBoundingClientRect(), padX = cell * 2, padY = cell * 2;
+    const qx0 = cb.left - cr0.left - padX, qx1 = cb.right - cr0.left + padX, qy0 = cb.top - cr0.top - padY, qy1 = cb.bottom - cr0.top + padY;
     for (let y = 0; y < rows; y++) for (let x = 0; x < cols; x++) {
       const i = (y * cols + x) * 4; const r = lum[i], g = lum[i + 1], b = lum[i + 2];
       const L = (r * .3 + g * .59 + b * .11) / 255;
       const ch = RAMP[Math.min(RAMP.length - 1, Math.floor(L * (RAMP.length)))];
       if (ch === ' ') continue;
       const warm = r > b + 30;
-      const a = clamp(L * 1.4 + (warm ? lit * .6 : 0) - flick, .08, 1);
+      let a = clamp(L * 1.4 + (warm ? lit * .6 : 0) - flick, .08, 1);
+      const px = x * cell, py = y * cell * 1.25;
+      if (px > qx0 && px < qx1 && py > qy0 && py < qy1) a *= .12;
       actx.fillStyle = warm ? `rgba(240,${140 + L * 60 | 0},70,${a})` : `rgba(200,190,210,${a * (.35 + lit * .4)})`;
       actx.fillText(ch, x * cell, y * cell * 1.25);
     }
